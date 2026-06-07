@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Invantage.Api/Invantage.Api.csproj" />
+    <Project Path="src/Invantage.Application/Invantage.Application.csproj" />
+    <Project Path="src/Invantage.Core/Invantage.Core.csproj" />
+    <Project Path="src/Invantage.Infrastructure/Invantage.Infrastructure.csproj" />
+  </Folder>
+</Solution>
