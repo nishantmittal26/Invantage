@@ -15,8 +15,11 @@ namespace Invantage.Infrastructure
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("DefaultConnection") ?? 
-                "Server=(localdb)\\MSSQLLocalDB;Database=InvantageDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True";
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new InvalidOperationException("Connection string 'DefaultConnection' was not found. Ensure appsettings.json is loaded correctly.");
+            }
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString,
