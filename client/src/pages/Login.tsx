@@ -27,6 +27,7 @@ import { loginStart, loginSuccess, loginFailure } from '../store/authSlice';
 import { showAlert } from '../store/alertSlice';
 import axiosInstance from '../api/axios';
 import { LoginRequest } from '../types';
+import logo from '../assets/invantage-logo.png';
 
 const schema = yup.object().shape({
   email: yup.string().email('Invalid email address').required('Email is required'),
@@ -37,7 +38,7 @@ const Login: React.FC = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   const { isLoading, isAuthenticated, error } = useAppSelector((state) => state.auth);
   const [showPassword, setShowPassword] = React.useState(false);
 
@@ -80,8 +81,8 @@ const Login: React.FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: (theme) => theme.palette.mode === 'dark' 
-          ? 'radial-gradient(circle at top left, #0f172a 0%, #020617 100%)' 
+        background: (theme) => theme.palette.mode === 'dark'
+          ? 'radial-gradient(circle at top left, #0f172a 0%, #020617 100%)'
           : 'radial-gradient(circle at top left, #f1f5f9 0%, #e2e8f0 100%)',
         px: 2,
       }}
@@ -97,11 +98,22 @@ const Login: React.FC = () => {
         >
           <Card sx={{ border: 'none', boxShadow: 'none' }}>
             <CardContent sx={{ p: { xs: 4, md: 6 }, textAlign: 'center' }}>
-              <Box sx={{ mb: 4 }}>
-                <Typography variant="h3" sx={{ fontWeight: 800, mb: 1, background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              <Box sx={{ mb: 4, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
+                <Box
+                  component="img"
+                  src={logo}
+                  alt="Invantage Logo"
+                  sx={{
+                    height: 80,
+                    maxWidth: '100%',
+                    objectFit: 'contain',
+                    mb: 1
+                  }}
+                />
+                {/* <Typography variant="h4" sx={{ fontWeight: 800, mb: 0.5, background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                   Invantage
-                </Typography>
-                <Typography variant="body1" color="textSecondary">
+                </Typography> */}
+                <Typography variant="body2" color="textSecondary">
                   Enterprise Inventory Management ERP
                 </Typography>
               </Box>

@@ -1,0 +1,5 @@
+2026-06-09 11:24:38.211 +05:30 [INF] Checking database migrations...
+2026-06-09 11:24:39.022 +05:30 [INF] Database is up to date. No migrations to apply.
+2026-06-09 11:24:55.095 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-06-09 11:24:58.113 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-09 11:25:31.070 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
