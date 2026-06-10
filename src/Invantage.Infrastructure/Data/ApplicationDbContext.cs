@@ -192,7 +192,7 @@ namespace Invantage.Infrastructure.Data
                 new RolePermission { Id = Guid.Parse("22222222-caca-caca-caca-222222222223"), RoleId = managerRoleId, PermissionId = permUsersId, View = false, Add = false, Edit = false, Delete = false },
                 new RolePermission { Id = Guid.Parse("22222222-caca-caca-caca-222222222224"), RoleId = managerRoleId, PermissionId = permDashboardId, View = true, Add = true, Edit = true, Delete = true },
                 new RolePermission { Id = Guid.Parse("22222222-caca-caca-caca-222222222225"), RoleId = managerRoleId, PermissionId = permReportsId, View = true, Add = true, Edit = true, Delete = true },
-                new RolePermission { Id = Guid.Parse("22222222-caca-caca-caca-222222222226"), RoleId = managerRoleId, PermissionId = permSettingsId, View = true, Add = false, Edit = false, Delete = false }
+                new RolePermission { Id = Guid.Parse("22222222-caca-caca-caca-222222222226"), RoleId = managerRoleId, PermissionId = permSettingsId, View = false, Add = false, Edit = false, Delete = false }
             );
 
             // Seed Role Permissions for StoreUser

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link as RouterLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -15,6 +15,7 @@ import {
   IconButton,
   Container,
   Paper,
+  Link,
 } from '@mui/material';
 import {
   EmailOutlined as EmailIcon,
@@ -141,6 +142,24 @@ const Login: React.FC = () => {
                     slotProps={{ input: { startAdornment: (<InputAdornment position="start"><LockIcon color="action" /></InputAdornment>), endAdornment: (<InputAdornment position="end"><IconButton onClick={() => setShowPassword(!showPassword)} edge="end">{showPassword ? <VisibilityOff /> : <Visibility />}</IconButton></InputAdornment>) } }}
                   />
 
+                  <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: -1 }}>
+                    <Link
+                      component={RouterLink}
+                      to="/forgot-password"
+                      variant="body2"
+                      sx={{
+                        fontWeight: 600,
+                        textDecoration: 'none',
+                        color: 'primary.main',
+                        '&:hover': {
+                          textDecoration: 'underline',
+                        }
+                      }}
+                    >
+                      Forgot Password?
+                    </Link>
+                  </Box>
+
                   {error && (
                     <Typography variant="body2" color="error" sx={{ textAlign: 'left' }}>
                       {error}
@@ -163,14 +182,14 @@ const Login: React.FC = () => {
                 </Box>
               </form>
 
-              <Box sx={{ mt: 4, borderTop: (theme) => `1px solid ${theme.palette.divider}`, pt: 3 }}>
+              {/* <Box sx={{ mt: 4, borderTop: (theme) => `1px solid ${theme.palette.divider}`, pt: 3 }}>
                 <Typography variant="caption" color="textSecondary" sx={{ display: 'block' }}>
                   Demo Master Admin Credentials:
                 </Typography>
                 <Typography variant="caption" color="textSecondary" sx={{ fontWeight: 600 }}>
                   admin@invantage.com / Admin@123
                 </Typography>
-              </Box>
+              </Box> */}
             </CardContent>
           </Card>
         </Paper>

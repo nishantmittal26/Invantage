@@ -3,3 +3,34 @@
 2026-06-09 11:24:55.095 +05:30 [WRN] Failed to determine the https port for redirect.
 2026-06-09 11:24:58.113 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
 2026-06-09 11:25:31.070 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2026-06-09 13:11:02.558 +05:30 [INF] Checking database migrations...
+2026-06-09 13:11:03.752 +05:30 [INF] Database is up to date. No migrations to apply.
+2026-06-09 13:16:58.197 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-06-09 13:17:01.413 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-09 13:20:15.716 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2026-06-09 13:22:01.504 +05:30 [WRN] SMTP disabled or not configured. [MOCK EMAIL SENT]
+To: nishantmittal26@gmail.com
+Subject: Reset Password - Invantage Inventory Management
+Body: <h3>Hi Master,</h3><p>Please reset your password by clicking on the link below:</p><p><a href='http://localhost:5173/reset-password?token=CfDJ8AZAe1vQnTRJv%2Fcym7taG2d9QZhsX5ZT%2FZzlNGZmU5xFB91hPF%2BNXWB2slGsOPy81dqeCOTSFMlSwxIFDQ0fJwVv3hmaIxM%2FV3QGqdhN9gqemv7a8mnHa3ZnCKrybApctQL7mj1qkB6sKQ89G%2F16v6PAskAtyHz1pfPEySn5%2Bv0mN4AnVWFTp25%2BHQtrymm2twlP6Pi3v3Pv2oG0ZPD5Vyyl5oH%2BcnxrXeN6d16bJNuqFKoDFR9OaYdkHQv327Q4kw%3D%3D&email=nishantmittal26%40gmail.com'>Reset Password Link</a></p><br/><p>If you didn't request this, please ignore this email.</p>
+2026-06-09 13:56:49.728 +05:30 [WRN] SMTP disabled or not configured. [MOCK EMAIL SENT]
+To: nishantmittal26@gmail.com
+Subject: Reset Password - Invantage Inventory Management
+Body: <h3>Hi Master,</h3><p>Please reset your password by clicking on the link below:</p><p><a href='http://localhost:5173/reset-password?token=CfDJ8AZAe1vQnTRJv%2Fcym7taG2ciG6CRKR7AOg0D39dViBhB5TwtlSFW9Z%2FxByzj2X6mXHd%2FQCqQ1XSvnSl1PQ3eq2XXPh0fF5W%2Fjso4u8WrlyEQjZt1HdareldSvchRVSCYXxvb69d8md1E2q3fN6Zvu6TUvFElAy4TmO7H0x0yxsmHhWc0hqqsL%2BdMINs4wiGR1feXhhLN%2FVCvtx8jfccmYDinK4Tbh6gwmofbeIvh3%2FdNF8xVvh3hsgZk%2BKLqFkkVDQ%3D%3D&email=nishantmittal26%40gmail.com'>Reset Password Link</a></p><br/><p>If you didn't request this, please ignore this email.</p>
+2026-06-09 14:00:30.833 +05:30 [WRN] SMTP disabled or not configured. [MOCK EMAIL SENT]
+To: nishantmittal26@gmail.com
+Subject: Reset Password - Invantage Inventory Management
+Body: <h3>Hi Master,</h3><p>Please reset your password by clicking on the link below:</p><p><a href='http://localhost:5173/reset-password?token=CfDJ8AZAe1vQnTRJv%2Fcym7taG2fKQrOeIujpXSYLdwuph6DWwbjZx3vs55Z6rOu%2BppUbu2jR9tOodKleMJqWUVzEPCJvRLCd3tbBryD4XxSHbDr0ePlD5A0BHrAs3DldQGsipjWaI1VJbCr1i58%2ByoQe15eZv2Jzv4vhj3IjUup9004VLhvlfEx6%2BkH8nVnofiaajIulWlI0qALjWqHKuCjIqPX9wJRJegrGv%2Bsv2SXd0jrwXeMYpX5Y6wMkeZiRqMwv9Q%3D%3D&email=nishantmittal26%40gmail.com'>Reset Password Link</a></p><br/><p>If you didn't request this, please ignore this email.</p>
+2026-06-09 14:02:44.194 +05:30 [WRN] SMTP disabled or not configured. [MOCK EMAIL SENT]
+To: nishantmittal26@gmail.com
+Subject: Reset Password - Invantage Inventory Management
+Body: <h3>Hi Master,</h3><p>Please reset your password by clicking on the link below:</p><p><a href='http://localhost:5173/reset-password?token=CfDJ8AZAe1vQnTRJv%2Fcym7taG2fVPMzkJm3bXJmnKLORMOTWq972fxcEtn3nOyP0Kxk1C5WsMdlVHh13Ttqp2OYWAATufuuBjWZtgAigLdjfTN2doiSbrQnQ9kgaxWbTS0v9Q2kJME96GDmdYmWhEWEDHtSPKwMn4C5XHFPEipW1d%2BLFofPH0cliaFhEKS6shAus1S%2FciNQoCAn%2FVFxjy39axt2TsSQi0%2BcQnwASWw1IXK3kojZmtPcYiC17LT%2FwYbZUnA%3D%3D&email=nishantmittal26%40gmail.com'>Reset Password Link</a></p><br/><p>If you didn't request this, please ignore this email.</p>
+2026-06-09 14:04:46.291 +05:30 [WRN] SMTP disabled or not configured. [MOCK EMAIL SENT]
+To: nishantmittal26@gmail.com
+Subject: Reset Password - Invantage Inventory Management
+Body: <h3>Hi Master,</h3><p>Please reset your password by clicking on the link below:</p><p><a href='http://localhost:5173/reset-password?token=CfDJ8AZAe1vQnTRJv%2Fcym7taG2eeBT%2BPBebVmy0Fj5mJrMzcebyF1bewfrB%2FFsBJFZREUcm2SskVR6YcenIBg%2BsHSqCBJYL5cf%2FP4aDb2D%2FmJxWgbGqfcE6wRj%2FUJtJUqkT9bEruA6q0Rig6mUVGa%2B1WboejPO%2F%2Bq464Rv%2BayJqNUk2A4JhALrYAf7SFXUJ014aY%2BD06IX5GHzcobYdYVaOyHx%2Bo41MQdTD1F64BklNlLvY3sMsn7hXpDZ%2BpKDcKFndaJQ%3D%3D&email=nishantmittal26%40gmail.com'>Reset Password Link</a></p><br/><p>If you didn't request this, please ignore this email.</p>
+2026-06-09 14:12:13.244 +05:30 [INF] Checking database migrations...
+2026-06-09 14:12:14.015 +05:30 [INF] Database is up to date. No migrations to apply.
+2026-06-09 14:12:16.728 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-06-09 14:12:17.179 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-09 14:19:41.212 +05:30 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2026-06-09 18:15:50.623 +05:30 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.

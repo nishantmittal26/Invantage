@@ -8,7 +8,7 @@ using Invantage.Application.DTOs.Settings;
 
 namespace Invantage.Api.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "MasterAdmin")]
     [ApiController]
     [Route("api/[controller]")]
     public class SettingsController : BaseApiController

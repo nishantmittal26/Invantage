@@ -45,6 +45,7 @@ import {
   People as UsersIcon,
   AdminPanelSettings as RolesIcon,
   Settings as SettingsIcon,
+  LockOutlined as LockIcon,
   ExpandLess,
   ExpandMore,
   FiberManualRecord as DotIcon,
@@ -491,11 +492,19 @@ const Layout: React.FC = () => {
           </Box>
         </MenuItem>
         <Divider />
-        <MenuItem onClick={() => { handleProfileMenuClose(); navigate('/settings'); }}>
+        {user?.role === 'MasterAdmin' && (
+          <MenuItem onClick={() => { handleProfileMenuClose(); navigate('/settings'); }}>
+            <ListItemIcon>
+              <SettingsIcon fontSize="small" />
+            </ListItemIcon>
+            System Settings
+          </MenuItem>
+        )}
+        <MenuItem onClick={() => { handleProfileMenuClose(); navigate('/change-password'); }}>
           <ListItemIcon>
-            <SettingsIcon fontSize="small" />
+            <LockIcon fontSize="small" />
           </ListItemIcon>
-          Profile Settings
+          Change Password
         </MenuItem>
         <MenuItem onClick={handleLogout} sx={{ color: theme.palette.error.main }}>
           <ListItemIcon sx={{ color: theme.palette.error.main }}>

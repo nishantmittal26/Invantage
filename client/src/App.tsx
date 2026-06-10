@@ -11,6 +11,8 @@ import RouteGuard from './components/RouteGuard';
 
 // Pages
 import Login from './pages/Login';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 import Dashboard from './pages/Dashboard';
 import Categories from './pages/Categories';
 import Brands from './pages/Brands';
@@ -28,6 +30,7 @@ import Users from './pages/Users';
 import Roles from './pages/Roles';
 import Settings from './pages/Settings';
 import Unauthorized from './pages/Unauthorized';
+import ChangePassword from './pages/ChangePassword';
 
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -47,7 +50,10 @@ const App: React.FC = () => {
         <Routes>
           {/* Public Routes */}
           <Route path="/login" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/unauthorized" element={<Unauthorized />} />
+
 
           {/* Protected Main App Routes */}
           <Route
@@ -82,12 +88,44 @@ const App: React.FC = () => {
             <Route path="reports" element={<Reports />} />
 
             {/* Administration */}
-            <Route path="admin/users" element={<Users />} />
-            <Route path="admin/roles" element={<Roles />} />
+            <Route
+              path="admin/users"
+              element={
+                <RouteGuard requiredRole="MasterAdmin">
+                  <Users />
+                </RouteGuard>
+              }
+            />
+            <Route
+              path="admin/roles"
+              element={
+                <RouteGuard requiredRole="MasterAdmin">
+                  <Roles />
+                </RouteGuard>
+              }
+            />
 
             {/* Settings */}
-            <Route path="settings" element={<Settings />} />
+            <Route
+              path="settings"
+              element={
+                <RouteGuard requiredRole="MasterAdmin">
+                  <Settings />
+                </RouteGuard>
+              }
+            />
+
+            {/* Change Password */}
+            <Route
+              path="change-password"
+              element={
+                <RouteGuard>
+                  <ChangePassword />
+                </RouteGuard>
+              }
+            />
           </Route>
+
 
           {/* Catch-all Redirect */}
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
