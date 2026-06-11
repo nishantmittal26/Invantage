@@ -43,7 +43,7 @@ Invantage is a modern, enterprise-grade **Inventory and Warehouse Management Sys
 ## 🛠️ Technology Stack
 
 ### Backend
-- **Framework**: .NET 8.0 (ASP.NET Core Web API)
+- **Framework**: .NET 10.0 (ASP.NET Core Web API)
 - **Database**: Microsoft SQL Server
 - **ORM**: Entity Framework Core 8 (EF Core)
 - **Security & Identity**: ASP.NET Core Identity with **JWT Bearer Authentication**
