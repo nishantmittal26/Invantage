@@ -106,7 +106,7 @@ Follow these steps to set up and run the project locally on your machine.
 
 ### 📋 Prerequisites
 Ensure you have the following installed:
-1. **.NET 8.0 SDK** ([Download here](https://dotnet.microsoft.com/download/dotnet/8.0))
+1. **.NET 10.0 SDK** ([Download here](https://dotnet.microsoft.com/download/dotnet/10.0))
 2. **Node.js** v18+ and **npm** ([Download here](https://nodejs.org/))
 3. **Microsoft SQL Server** (LocalDB, Express, or Developer edition)
 4. **Visual Studio 2022** (v17.10+) or **VS Code** with C# Dev Kit extension
@@ -120,7 +120,7 @@ Ensure you have the following installed:
    - Under `ConnectionStrings`, update the `DefaultConnection` string to point to your local SQL Server instance:
      ```json
      "ConnectionStrings": {
-       "DefaultConnection": "Server=YOUR_SERVER;Database=InvantageDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
+       "DefaultConnection": "Server=YOUR_SERVER;Database=Invantage-Dev;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
      }
      ```
      *Tip: If using standard SQL Server Authentication, use:*
